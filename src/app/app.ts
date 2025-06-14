@@ -12,5 +12,7 @@ import { RouterOutlet } from '@angular/router';
   styles: [],
 })
 export class App {
+
   protected title = 'wichu-home';
+
 }
