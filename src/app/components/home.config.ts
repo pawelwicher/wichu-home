@@ -172,6 +172,7 @@ export const homeConfig = [
     links: [
       { label: 'Konradus Forum', url: 'https://www.konradus.com/forum/' },
       { label: 'GPM - architektura', url: 'https://sklep.gpm.pl/modele-kartonowe/architektura/gpm' },
+      { label: 'WAK - architektura', url: 'https://www.wak.pl/architektura-c-1_48.html' },
     ],
   },
 ];

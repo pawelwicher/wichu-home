@@ -54,6 +54,16 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Deploying to GitHub Pages
+
+To deploy your Angular app to GitHub Pages, run:
+
+```bash
+npm run deploy
+```
+
+This will build the project and publish the contents of `dist/angular-playground/browser` to the `gh-pages` branch using [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages).
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
