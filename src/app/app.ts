@@ -3,13 +3,20 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet
+  ],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
     <router-outlet />
   `,
-  styles: [],
+  styles: `
+  :host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }`
 })
 export class App {
 
