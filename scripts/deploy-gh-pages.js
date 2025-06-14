@@ -4,5 +4,5 @@ const { execSync } = require('child_process');
 const repoName = require('../package.json').name;
 
 console.log('Deploying to GitHub Pages...');
-execSync(`npx ngh --dir=dist/${repoName}`, { stdio: 'inherit' });
+execSync(`npx ngh --dir=dist/${repoName}/browser`, { stdio: 'inherit' });
 console.log('Deployment complete.');
