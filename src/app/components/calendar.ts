@@ -106,35 +106,6 @@ import { CommonModule } from '@angular/common';
       font-weight: bold;
       border: 2px solid #0d4e8e;
     }
-    @media (max-width: 900px) {
-      .calendar-row {
-        gap: 1.2rem;
-      }
-      .calendar-month {
-        min-width: 160px;
-      }
-    }
-    @media (max-width: 600px) {
-      .dashboard-section {
-        min-width: unset;
-        width: 100%;
-      }
-      .calendar-year {
-        gap: 1rem;
-      }
-      .calendar-row {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
-      }
-      .calendar-month {
-        min-width: 100%;
-        margin-bottom: 1rem;
-      }
-      .calendar-grid {
-        grid-template-columns: repeat(7, 1.5rem);
-      }
-    }
   `,
 })
 export class Calendar implements OnDestroy {

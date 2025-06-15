@@ -71,7 +71,6 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       border-left: 1px solid var(--color-border);
       border-right: 1px solid var(--color-border);
       color: var(--color-text-dark);
@@ -83,25 +82,6 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       padding: var(--padding-nav-footer);
       flex-shrink: 0;
       border-top: 1px solid var(--color-border);
-    }
-    @media (max-width: 600px) {
-      .main {
-        padding: var(--padding-main-mobile);
-        border-left: none;
-        border-right: none;
-      }
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .nav-link {
-        margin: 0 0 0.5rem 0;
-        font-size: var(--font-size-nav-mobile);
-      }
-      .theme-toggle {
-        margin-left: 0;
-        margin-top: 0.5rem;
-      }
     }
   `,
 })

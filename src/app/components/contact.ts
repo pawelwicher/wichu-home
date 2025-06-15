@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
       <div class="contact-city">59-300 Lubin</div>
       <div class="contact-nip">NIP: 6121799181</div>
       <div class="contact-regon">REGON: 363264887</div>
-      <a class="contact-pdf" href="CEIDG.pdf" target="_blank">Pobierz CEIDG</a>
+      <a class="contact-pdf" href="CEIDG.pdf" target="_blank">CEIDG</a>
     </div>
   `,
   styles: `
@@ -32,7 +32,6 @@ import { Component } from '@angular/core';
       margin-bottom: 0.3rem;
     }
     .contact-pdf {
-      margin-top: 1rem;
       display: inline-block;
       color: #0d4e8e;
       text-decoration: underline;

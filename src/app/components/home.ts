@@ -13,11 +13,7 @@ import { homeLinks } from '../models/home-links';
       <div class="cell">
         <i class="material-icons">{{cell.icon}}</i>
         @for (link of cell.links; track link.url) {
-          @if (isAngularLink(link.url)) {
-            <a [routerLink]="link.url">{{link.label}}</a>
-          } @else {
-            <a [href]="link.url" target="_blank">{{link.label}}</a>
-          }
+          <a [href]="link.url" target="_blank">{{link.label}}</a>
         }
       </div>
     }
@@ -55,9 +51,5 @@ import { homeLinks } from '../models/home-links';
 export class Home {
 
   protected cells = homeLinks;
-
-  protected isAngularLink(url: string): boolean {
-    return url.startsWith('/');
-  }
 
 }
