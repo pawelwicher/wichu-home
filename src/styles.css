@@ -1,6 +1,10 @@
-body {
-  font-family: 'Ubuntu Mono', monospace;
-  height: 100vh;
+html, body {
   margin: 0;
-  font-size: 12px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: clamp(12px, 2vw, 14px);
 }

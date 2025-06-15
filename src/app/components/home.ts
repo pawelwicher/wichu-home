@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { homeConfig } from './home.config';
 import { RouterModule } from '@angular/router';
+import { homeLinks } from '../models/home-links';
 
 @Component({
   selector: 'app-home',
@@ -40,7 +40,7 @@ import { RouterModule } from '@angular/router';
   }
   .material-icons {
     font-size: 1.2rem;
-    color: #0d4891;
+    color: #0d4e8e;
   }
   a {
     text-decoration: none;
@@ -49,12 +49,12 @@ import { RouterModule } from '@angular/router';
     cursor: pointer;
   }
   a:hover {
-    color: #007BFF;
+    color: #0d4e8e;
   }`,
 })
 export class Home {
 
-  protected cells = homeConfig;
+  protected cells = homeLinks;
 
   protected isAngularLink(url: string): boolean {
     return url.startsWith('/');

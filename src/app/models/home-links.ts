@@ -1,4 +1,4 @@
-export const homeConfig = [
+export const homeLinks = [
   {
     icon: 'save',
     links: [
