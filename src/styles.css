@@ -1,3 +1,17 @@
+:root {
+  --color-bg-dark: #222;
+  --color-bg-light: #fff;
+  --color-text-light: #fff;
+  --color-text-dark: #222;
+  --color-accent:#1684de;
+  --color-text-blue: #0d4e8e;
+  --color-border: #ccc;
+  --padding-main: 1rem;
+  --padding-nav: 0.5rem;
+  --padding-footer: 0.5rem;
+  --font-size-nav: 1rem;
+}
+
 html, body {
   margin: 0;
   padding: 0;

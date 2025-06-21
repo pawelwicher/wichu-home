@@ -8,79 +8,76 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     RouterOutlet
   ],
   template: `
-    <nav class="nav">
-      <a routerLink="/" class="nav-link">Home</a>
-      <a routerLink="/clock" class="nav-link">Zegar</a>
-      <a routerLink="/calendar" class="nav-link">Kalendarz</a>
-      <a routerLink="/contact" class="nav-link">Kontakt</a>
-    </nav>
-    <main class="main">
+    <header>
+      <nav>
+        <a routerLink="/">Home</a>
+        <a routerLink="/clock">Zegar</a>
+        <a routerLink="/calendar">Kalendarz</a>
+        <a routerLink="/contact">Kontakt</a>
+      </nav>
+    </header>
+    <main>
       <router-outlet />
     </main>
-    <footer class="footer">
+    <footer>
       &copy; 2025 All rights reserved
     </footer>
   `,
   styles: `
     :host {
-      --color-bg-dark: #222;
-      --color-bg-light: #f9f9f9;
-      --color-text-light: #fff;
-      --color-text-dark: #222;
-      --color-accent:rgb(22, 132, 222);
-      --color-border: #ccc;
-      --padding-main: 2rem;
-      --padding-main-mobile: 1rem;
-      --padding-nav-footer: 0.5rem;
-      --font-size-nav: 1rem;
-      --font-size-nav-mobile: 1rem;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      color: var(--color-text-dark);
     }
-    .nav {
+    nav {
       background: var(--color-bg-dark);
       color: var(--color-text-light);
-      padding: var(--padding-nav-footer);
+      padding: var(--padding-nav);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       border-bottom: 1px solid var(--color-border);
     }
-    .nav-link {
+    nav > a {
       color: var(--color-text-light);
       margin-right: 1rem;
       text-decoration: none;
       transition: color 0.2s;
     }
-    .nav-link:last-child {
+    nav > a:last-child {
       margin-right: 0;
     }
-    .nav-link:hover {
+    nav > a:hover {
       color: var(--color-accent);
     }
-    .main {
-      flex: 1 0 auto;
-      padding: var(--padding-main);
-      background: var(--color-bg-light);
+    header {
+      grid-area: header;
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-left: 1px solid var(--color-border);
-      border-right: 1px solid var(--color-border);
-      color: var(--color-text-dark);
-    }
-    .footer {
+      z-index: 1000;
       background: var(--color-bg-dark);
       color: var(--color-text-light);
+    }
+    main {
+      grid-area: main;
+      margin-top: 25px;
+      padding: var(--padding-main);
+      background: var(--color-bg-light);
+    }
+    footer {
+      grid-area: footer;
+      background: var(--color-bg-dark);
+      padding: var(--padding-footer);
+      color: var(--color-text-light);
       text-align: center;
-      padding: var(--padding-nav-footer);
-      flex-shrink: 0;
       border-top: 1px solid var(--color-border);
     }
   `,

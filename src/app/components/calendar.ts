@@ -39,9 +39,7 @@ import { CommonModule } from '@angular/common';
   `,
   styles: `
     .dashboard-section {
-      background: #fff;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       padding: 1.5rem 2rem;
       min-width: 220px;
       text-align: center;
@@ -53,11 +51,11 @@ import { CommonModule } from '@angular/common';
       font-size: 1.1rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
-      color: #222;
+      color: var(--color-text-dark);
     }
     .dashboard-value {
       font-size: 1.5rem;
-      color: #0d4e8e;
+      color: var(--color-text-blue);
       min-height: 2.5rem;
       margin-bottom: 1rem;
     }
@@ -80,7 +78,7 @@ import { CommonModule } from '@angular/common';
     }
     .calendar-month-title {
       font-weight: bold;
-      color: #0d4e8e;
+      color: var(--color-text-blue);
       margin-bottom: 0.3rem;
       text-align: center;
     }
@@ -109,10 +107,10 @@ import { CommonModule } from '@angular/common';
       pointer-events: none;
     }
     .calendar-today {
-      background: #0d4e8e !important;
-      color: #fff !important;
+      background: var(--color-text-blue) !important;
+      color: var(--color-text-light) !important;
       font-weight: bold;
-      border: 2px solid #0d4e8e;
+      border: 2px solid var(--color-text-blue);
     }
   `,
 })

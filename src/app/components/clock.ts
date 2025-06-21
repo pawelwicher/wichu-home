@@ -11,34 +11,21 @@ import { interval, Subscription } from 'rxjs';
   `,
   styles: `
     .dashboard-section {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-      padding: 2rem 2rem;
-      min-width: 220px;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     .dashboard-title {
       font-size: 1.1rem;
-      font-weight: bold;
       margin-bottom: 0.5rem;
-      color: #222;
     }
     .dashboard-value {
       font-size: 5rem;
-      color: #0d4e8e;
+      color: var(--color-text-blue);
       min-height: 5rem;
-      font-family: 'Consolas', monospace;
       letter-spacing: 0.05em;
     }
     .dashboard-date {
       font-size: 1.5rem;
-      color: #222;
       margin-bottom: 1.2rem;
-      font-weight: 500;
     }
   `,
 })

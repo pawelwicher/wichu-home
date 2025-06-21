@@ -24,9 +24,7 @@ import { homeLinks } from '../models/home-links';
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(7, auto);
-    gap: 1rem;
-    width: 90vw;
-    height: 90vh;
+    row-gap: 5rem;
   }
   .cell {
     display: flex;
@@ -36,16 +34,16 @@ import { homeLinks } from '../models/home-links';
   }
   .material-icons {
     font-size: 1.2rem;
-    color: #0d4e8e;
+    color: var(--color-text-blue);
   }
   a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-text-dark);
     margin: 0.5rem 0;
     cursor: pointer;
   }
   a:hover {
-    color: #0d4e8e;
+    color: var(--color-text-blue);
   }`,
 })
 export class Home {
