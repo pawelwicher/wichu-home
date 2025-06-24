@@ -20,7 +20,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       <router-outlet />
     </main>
     <footer>
-      &copy; 2025 All rights reserved
+      &copy; 2025 All rights reserved ({{ version }})
     </footer>
   `,
   styles: `
@@ -38,7 +38,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     nav {
       background: var(--color-bg-dark);
       color: var(--color-text-light);
-      padding: var(--padding-nav);
+      padding: 0.5rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -69,17 +69,21 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     main {
       grid-area: main;
       margin-top: 25px;
-      padding: var(--padding-main);
+      padding: 1rem;
       background: var(--color-bg-light);
     }
     footer {
       grid-area: footer;
       background: var(--color-bg-dark);
-      padding: var(--padding-footer);
+      padding: 0.5rem;
       color: var(--color-text-light);
       text-align: center;
       border-top: 1px solid var(--color-border);
     }
   `,
 })
-export class App { }
+export class App {
+
+  protected version = '1.0.0.1';
+
+}

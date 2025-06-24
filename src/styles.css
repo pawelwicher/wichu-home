@@ -1,15 +1,14 @@
 :root {
-  --color-bg-dark: #222;
-  --color-bg-light: #fff;
-  --color-text-light: #fff;
-  --color-text-dark: #222;
+  --color-bg-dark: #222222;
+  --color-bg-light: #ffffff;
+  --color-text-light: #ffffff;
+  --color-text-dark: #222222;
   --color-accent:#1684de;
   --color-text-blue: #0d4e8e;
-  --color-border: #ccc;
-  --padding-main: 1rem;
-  --padding-nav: 0.5rem;
-  --padding-footer: 0.5rem;
-  --font-size-nav: 1rem;
+  --color-border: #cccccc;
+  --color-calendar-header: #555555;
+  --color-calendar-cell-bg: #f5f5f5;
+  --color-calendar-cell: #333333;
 }
 
 html, body {

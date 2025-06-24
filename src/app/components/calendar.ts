@@ -90,17 +90,17 @@ import { CommonModule } from '@angular/common';
     }
     .calendar-header {
       font-weight: bold;
-      color: #555;
+      color: var(--color-calendar-header, #555);
       font-size: 0.95rem;
       text-align: center;
     }
     .calendar-cell {
-      background: #f5f5f5;
+      background: var(--color-calendar-cell-bg, #f5f5f5);
       border-radius: 4px;
       padding: 0.3rem 0;
       text-align: center;
       font-size: 1rem;
-      color: #333;
+      color: var(--color-calendar-cell, #333);
     }
     .calendar-cell.empty {
       background: transparent;
