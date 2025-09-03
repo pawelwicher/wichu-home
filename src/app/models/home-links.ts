@@ -125,7 +125,6 @@ export const homeLinks = [
   {
     icon: 'corporate_fare',
     links: [
-      { label: 'Dane firmy', url: '/ceidg' },
       { label: 'iFirma', url: 'https://www.ifirma.pl/app' },
       { label: 'Ładne Podatki', url: 'https://ladnepodatki.pl/' },
       { label: 'LinkedIn', url: 'https://www.linkedin.com/home' },
