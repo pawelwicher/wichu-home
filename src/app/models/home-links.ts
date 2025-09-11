@@ -101,6 +101,7 @@ export const homeLinks = [
       { label: 'Radio Wrocław', url: 'https://www.radiowroclaw.pl/' },
       { label: 'Wrocław.pl', url: 'https://www.wroclaw.pl/' },
       { label: 'Bolec.info', url: 'https://www.bolec.info/' },
+      { label: 'Muzyczne Radio', url: 'https://www.muzyczneradio.pl/' },
     ],
   },
   {
