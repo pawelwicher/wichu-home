@@ -117,6 +117,7 @@ export const homeLinks = [
     icon: 'electrical_services',
     links: [
       { label: 'RTBS Lubin', url: 'https://www.rtbs-lubin.pl/' },
+      { label: 'Integrum Management', url: 'https://iok.integrummanagement.pl/content/InetObsKontr/login' },
       { label: 'Tauron', url: 'https://logowanie.tauron.pl/' },
       { label: 'PGNiG', url: 'https://ebok.pgnig.pl/' },
       { label: 'Play', url: 'https://logowanie.play.pl/opensso/logowanie' },
