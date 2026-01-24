@@ -20,7 +20,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       <router-outlet />
     </main>
     <footer>
-      &copy; 2025 All rights reserved ({{ version }})
+      &copy; 2026 All rights reserved ({{ version }})
     </footer>
   `,
   styles: `
