@@ -69,13 +69,10 @@ export const homeLinks = [
     links: [
       { label: 'ChatGPT', url: 'https://chat.openai.com/' },
       { label: 'GitHub', url: 'https://github.com/' },
-      { label: 'OpenAI developer platform', url: 'https://platform.openai.com/' },
-      { label: 'Google Gemini', url: 'https://gemini.google.com/app' },
       { label: 'MDN JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { label: 'Angular', url: 'https://angular.dev/overview' },
       { label: 'C#', url: 'https://learn.microsoft.com/en-us/dotnet/csharp/' },
       { label: 'Python', url: 'https://docs.python.org/3/tutorial/index.html' },
-      { label: 'Google Colab', url: 'https://colab.research.google.com/' },
       { label: 'Exercism', url: 'https://exercism.io/' },
       { label: 'Codewars', url: 'http://www.codewars.com/' },
       { label: 'Programista', url: 'http://www.programistamag.pl/' },
