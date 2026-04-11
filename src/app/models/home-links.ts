@@ -164,7 +164,6 @@ export const homeLinks = [
     icon: 'book',
     links: [
       { label: 'Czy Wielki Wybuch Był Głośny?', url: 'https://wydawnictworn.pl/p/czy-wielki-wybuch-byl-glosny-12-rozmow-o-historii-i-zyciu-codziennym-wszechswiata-karolina-glowacka-jean-pierre-lasota-ksiazka/' },
-      { label: 'Ziemie. Historie odzyskiwania i utraty', url: 'https://wydawnictworn.pl/p/ziemie-historie-odzyskiwania-i-utraty-karolina-cwiek-rogalska-ksiazka/' },
     ],
   },
   {
