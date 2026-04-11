@@ -68,6 +68,8 @@ export const homeLinks = [
     icon: 'keyboard',
     links: [
       { label: 'ChatGPT', url: 'https://chat.openai.com/' },
+      { label: 'Claude', url: 'https://claude.ai/new' },
+      { label: 'Gemini', url: 'https://gemini.google.com/app' },
       { label: 'GitHub', url: 'https://github.com/' },
       { label: 'MDN JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
       { label: 'Angular', url: 'https://angular.dev/overview' },
