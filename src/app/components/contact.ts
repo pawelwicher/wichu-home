@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
       <a class="contact-pdf" href="CEIDG.pdf" target="_blank">CEIDG</a>
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styles: `
     .contact-container {
       font-size: 1.2rem;

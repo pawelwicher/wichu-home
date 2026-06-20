@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { homeLinks } from '../models/home-links';
 
@@ -19,6 +19,7 @@ import { homeLinks } from '../models/home-links';
       }
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styles: `
     .container {
       display: grid;

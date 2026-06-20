@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -23,6 +23,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       &copy; 2026 All rights reserved ({{ version }})
     </footer>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styles: `
     :host {
       display: grid;

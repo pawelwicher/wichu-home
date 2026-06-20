@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 
 @Component({
@@ -22,6 +22,7 @@ import { interval, Subscription } from 'rxjs';
       </div>
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styles: `
     .watch-wrap {
       display: flex;
