@@ -1,6 +1,7 @@
 export const homeLinks = [
   {
     icon: 'save',
+    name: 'Chmura i dokumenty',
     links: [
       { label: 'Dysk', url: 'https://drive.google.com/drive/my-drive?ths=true' },
       { label: 'Kalendarz', url: 'https://calendar.google.com/calendar/u/0/r/year?pli=1' },
@@ -11,6 +12,7 @@ export const homeLinks = [
   },
   {
     icon: 'attach_money',
+    name: 'Finanse i bankowosc',
     links: [
       { label: 'mBank', url: 'https://online.mbank.pl/pl/Login' },
       { label: 'Obligacje Skarbowe', url: 'https://www.zakup.obligacjeskarbowe.pl/login.html' },
@@ -18,24 +20,28 @@ export const homeLinks = [
   },
   {
     icon: 'music_note',
+    name: 'Muzyka',
     links: [
       { label: 'YouTube Music', url: 'https://music.youtube.com/' },
     ],
   },
   {
     icon: 'tv',
+    name: 'Wideo',
     links: [
       { label: 'YouTube', url: 'https://www.youtube.com/' },
     ],
   },
   {
     icon: 'chat',
+    name: 'Komunikatory',
     links: [
       { label: 'WhatsApp', url: 'https://web.whatsapp.com/' },
     ],
   },
   {
     icon: 'location_on',
+    name: 'Mapy',
     links: [
       { label: 'Województwo dolnośląskie', url: 'https://www.google.com/maps/place/Wojew%C3%B3dztwo+dolno%C5%9Bl%C4%85skie/@51.2363431,16.3033345,10z/data=!4m6!3m5!1s0x470faa22b29843f1:0x1020e32ad0ec020!8m2!3d51.1339861!4d16.8841961!16zL20vMDF2bjVi?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D' },
       { label: 'Wrocław', url: 'https://www.google.com/maps/place/Wroc%C5%82aw/@51.1183167,17.0379603,5419m/data=!3m1!1e3!4m6!3m5!1s0x470fe9c2d4b58abf:0xb70956aec205e0f5!8m2!3d51.1092948!4d17.0386019!16zL20vMDg0NWI?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D' },
@@ -45,6 +51,7 @@ export const homeLinks = [
   },
   {
     icon: 'train',
+    name: 'Transport',
     links: [
       { label: 'Koleje Dolnośląskie', url: 'https://kolejedolnoslaskie.pl/' },
       { label: 'Schemat KD', url: 'https://kolejedolnoslaskie.pl/wp-content/uploads/2025/06/Schemat-UMWD-2024-2025-3.0-na-www.pdf' },
@@ -52,6 +59,7 @@ export const homeLinks = [
   },
   {
     icon: 'work',
+    name: 'Praca',
     links: [
       { label: 'GitLab', url: 'https://gitlab.pse.pl/users/sign_in' },
       { label: 'Jira', url: 'https://jira.pse.pl/secure/Dashboard.jspa' },
@@ -67,6 +75,7 @@ export const homeLinks = [
   },
   {
     icon: 'keyboard',
+    name: 'Programowanie i AI',
     links: [
       { label: 'Claude', url: 'https://claude.ai/new' },
       { label: 'ChatGPT', url: 'https://chat.openai.com/' },
@@ -83,6 +92,7 @@ export const homeLinks = [
   },
   {
     icon: 'show_chart',
+    name: 'Gielda i krypto',
     links: [
       { label: 'Google Finance', url: 'https://www.google.com/finance/' },
       { label: 'USD/PLN', url: 'https://stooq.pl/q/?s=usdpln' },
@@ -96,6 +106,7 @@ export const homeLinks = [
   },
   {
     icon: 'newspaper',
+    name: 'Wiadomosci lokalne',
     links: [
       { label: 'Lubin.pl', url: 'https://www.lubin.pl/' },
       { label: 'Radio Wrocław', url: 'https://www.radiowroclaw.pl/' },
@@ -106,6 +117,7 @@ export const homeLinks = [
   },
   {
     icon: 'school',
+    name: 'Szkola i biblioteka',
     links: [
       { label: 'Vulcan', url: 'https://dziennik-uczen.vulcan.net.pl/powiatlubinski' },
       { label: 'Biblioteka', url: 'http://www.mbplubin.pl/' },
@@ -115,6 +127,7 @@ export const homeLinks = [
   },
   {
     icon: 'electrical_services',
+    name: 'Media i rachunki',
     links: [
       { label: 'RTBS Lubin', url: 'https://www.rtbs-lubin.pl/' },
       { label: 'Integrum Management', url: 'https://iok.integrummanagement.pl/content/InetObsKontr/login' },
@@ -126,6 +139,7 @@ export const homeLinks = [
   },
   {
     icon: 'corporate_fare',
+    name: 'Firma',
     links: [
       { label: 'iFirma', url: 'https://www.ifirma.pl/app' },
       { label: 'Ładne Podatki', url: 'https://ladnepodatki.pl/' },
@@ -134,6 +148,7 @@ export const homeLinks = [
   },
   {
     icon: 'shopping_cart',
+    name: 'Zakupy',
     links: [
       { label: 'Allegro', url: 'https://allegro.pl/' },
       { label: 'Amazon', url: 'https://www.amazon.pl/' },
@@ -151,6 +166,7 @@ export const homeLinks = [
   },
   {
     icon: 'toll',
+    name: 'Metale szlachetne',
     links: [
       { label: 'Numitracker', url: 'https://numitracker.com/' },
       { label: 'Tavex', url: 'https://tavex.pl/' },
@@ -163,12 +179,14 @@ export const homeLinks = [
   },
   {
     icon: 'book',
+    name: 'Ksiazki',
     links: [
       { label: 'Czy Wielki Wybuch Był Głośny?', url: 'https://wydawnictworn.pl/p/czy-wielki-wybuch-byl-glosny-12-rozmow-o-historii-i-zyciu-codziennym-wszechswiata-karolina-glowacka-jean-pierre-lasota-ksiazka/' },
     ],
   },
   {
     icon: 'castle',
+    name: 'Modelarstwo',
     links: [
       { label: 'Konradus Forum', url: 'https://www.konradus.com/forum/' },
       { label: 'GPM - architektura', url: 'https://sklep.gpm.pl/modele-kartonowe/architektura/gpm' },

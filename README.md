@@ -67,3 +67,31 @@ This will build the project and publish the contents of `dist/angular-playground
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## WebMCP (eksperyment)
+
+Aplikacja wystawia swoje zakladki agentom AI przez [WebMCP](https://angular.dev/ai/webmcp).
+Zamiast klikac po DOM, agent wywoluje narzedzia zarejestrowane przez Angulara.
+
+Narzedzia (`src/app/webmcp/link-tools.ts`, podpiete w `app.config.ts`):
+
+| Narzedzie | Opis |
+| --- | --- |
+| `listLinkCategories` | lista kategorii zakladek |
+| `searchLinks` | szukanie zakladek po nazwie/URL, z opcjonalna kategoria i limitem |
+| `openLink` | otwarcie zakladki w nowej karcie |
+
+Uwagi implementacyjne:
+
+- API Angulara (`provideExperimentalWebMcpTools`, `declareExperimentalWebMcpTool`) jest
+  oznaczone jako **experimental** - moze sie zmienic poza majorami.
+- Angular **nie waliduje** argumentow wzgledem `inputSchema` i typuje je jako `unknown`;
+  kazde `execute` sprawdza je samodzielnie.
+- Rejestracja jest pomijana podczas SSR, a w przegladarce bez WebMCP konczy sie cicho -
+  dlatego `src/app/webmcp/model-context.ts` instaluje wlasna atrape `document.modelContext`
+  (tylko gdy przegladarka nie dostarcza prawdziwej implementacji).
+
+### Panel testowy
+
+Trasa `/webmcp` listuje zarejestrowane narzedzia i pozwala wywolac je recznie z argumentami
+w formacie JSON - czyli zagrac role agenta bez zadnego modelu AI.

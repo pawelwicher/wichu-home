@@ -2,6 +2,7 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessC
 import { provideClientHydration, withEventReplay, withNoIncrementalHydration } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
+import { provideLinkWebMcpTools } from './webmcp/link-tools';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -9,5 +10,6 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideClientHydration(withEventReplay(), withNoIncrementalHydration()),
     provideRouter(routes),
+    provideLinkWebMcpTools(),
   ]
 };

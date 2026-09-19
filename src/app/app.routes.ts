@@ -14,6 +14,10 @@ export const routes: Routes = [
     loadComponent: () => import('./components/clock').then(m => m.Clock)
   },
   {
+    path: 'webmcp',
+    loadComponent: () => import('./components/webmcp-panel').then(m => m.WebMcpPanel)
+  },
+  {
     path: 'contact',
     loadComponent: () => import('./components/contact').then(m => m.Contact)
   }

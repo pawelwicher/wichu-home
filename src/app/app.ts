@@ -14,6 +14,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
         <a routerLink="/clock">Zegar</a>
         <a routerLink="/calendar">Kalendarz</a>
         <a routerLink="/contact">Kontakt</a>
+        <a routerLink="/webmcp">WebMCP</a>
       </nav>
     </header>
     <main>
