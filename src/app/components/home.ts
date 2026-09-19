@@ -31,6 +31,7 @@ import { homeLinks } from '../models/home-links';
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      align-items: flex-start;
       overflow-y: auto;
     }
     .material-icons {
@@ -42,9 +43,14 @@ import { homeLinks } from '../models/home-links';
       color: var(--color-text-dark);
       margin: 0.5rem 0;
       cursor: pointer;
+      outline: none;
     }
     a:hover {
       color: var(--color-text-blue);
+    }
+    a:focus-visible {
+      color: var(--color-text-blue);
+      text-decoration: underline;
     }
   `
 })
